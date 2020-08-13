@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image, Text, TouchableOpacity} from 'react-native';
+import { View, Image, Text, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
 
@@ -10,38 +10,43 @@ import studyIcon from '../../assets/images/icons/study.png';
 import giveClassesIcon from '../../assets/images/icons/give-classes.png';
 import heartIcon from '../../assets/images/icons/heart.png';
 
-function Landing(){
-    const {navigate}  = useNavigation();
+function Landing() {
+    const { navigate } = useNavigation();
 
-function handleNavigateToGiveClassesPage(){
-    navigate('GiveClasses');
-}
+    function handleNavigateToGiveClassesPage() {
+        navigate('GiveClasses');
+    }
+
+    function handleNavigateToStudyPages() {
+        navigate("Study");
+    }
 
     return (
-    <View style={styles.container}>
-        <Image source={landingImg} style={styles.banner}></Image>
-        <Text style={styles.title}>
-            Seja Bem vindo, {'\n'}
-            <Text style={styles.titleBold}>O que deseja fazer?</Text>
-        </Text>
-        <View style={styles.buttonsContainer}>
-            <TouchableOpacity style={[styles.button, styles.buttonPrimary]}>
-                <Image source={studyIcon}></Image>
+        <View style={styles.container}>
+            <Image source={landingImg} style={styles.banner}></Image>
+            <Text style={styles.title}>
+                Seja Bem vindo, {'\n'}
+                <Text style={styles.titleBold}>O que deseja fazer?</Text>
+            </Text>
+            <View style={styles.buttonsContainer}>
 
-                <Text style={styles.buttonText}>Estudar</Text>
-            </TouchableOpacity>
-            <TouchableOpacity onPress={handleNavigateToGiveClassesPage} style={[styles.button, styles.buttonSecondary]}>
-                <Image source={giveClassesIcon}></Image>
+                <TouchableOpacity onPress={handleNavigateToStudyPages} style={[styles.button, styles.buttonPrimary]}>
+                    <Image source={studyIcon}></Image>
+                    <Text style={styles.buttonText}>Estudar</Text>
+                </TouchableOpacity>
 
-                <Text style={styles.buttonText}>Dar Aulas</Text>
-            </TouchableOpacity>
+                <TouchableOpacity onPress={handleNavigateToGiveClassesPage} style={[styles.button, styles.buttonSecondary]}>
+                    <Image source={giveClassesIcon}></Image>
+                    <Text style={styles.buttonText}>Dar Aulas</Text>
+                </TouchableOpacity>
+
+            </View>
+            <Text style={styles.totalConnections}>
+                Total de 200 conexões já realizadas.{' '}
+                <Image source={heartIcon} />
+            </Text>
         </View>
-        <Text style={styles.totalConnections}>
-            Total de 200 conexões já realizadas.{' '}
-            <Image source={heartIcon}/>
-        </Text>
-    </View>
-    
+
     )
 }
 
