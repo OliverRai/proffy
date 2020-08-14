@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ImageBackground } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fafafc',
         padding: 24,
         alignItems: 'center',
-
+        marginTop: 24,
     },
 
     price: {
@@ -82,6 +82,10 @@ const styles = StyleSheet.create({
         marginRight: 8
     },
 
+    favorited: {
+        backgroundColor: '#e33e3d'
+    },
+
     contactButton: {
         backgroundColor: '#04D361',
         flex: 1,
@@ -97,7 +101,7 @@ const styles = StyleSheet.create({
         fontFamily: 'Archivo_700Bold',
         fontSize: 16,
         marginLeft: 16,
-    }
+    },
 })
 
 
