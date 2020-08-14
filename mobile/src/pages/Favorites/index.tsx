@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-community/async-storage';
+import { useFocusEffect } from '@react-navigation/native';
 
 
 import styles from './styles'
@@ -22,9 +23,11 @@ function Favorites() {
         });
     }
 
-    useEffect(() => {
-        loadFavorites();
-    }, []);
+    useFocusEffect(
+        React.useCallback(() => {
+          loadFavorites();
+        }, [])
+      )
 
     return (
         <View style={styles.container}>

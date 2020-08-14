@@ -8,6 +8,7 @@ import styles from './styles'
 import PageHeader from '../../components/PageHeader';
 import TeacherItem, { Teacher } from '../../components/TeacherItem';
 import api from '../../services/api';
+import { useFocusEffect } from '@react-navigation/native';
 
 
 
@@ -32,6 +33,12 @@ function TeacherList() {
             }
         });
     }
+
+    useFocusEffect(
+        React.useCallback(() => {
+          loadFavorites();
+        }, [])
+      )
 
     function handleToggleFiltersVisible() {
         setIsFiltersVisible(!isFiltersVisible);
