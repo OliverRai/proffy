@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginRight: 8,
+        height: 54,
     },
 
     submitButtonText: {
