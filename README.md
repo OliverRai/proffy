@@ -15,13 +15,13 @@
  </p>
  
  <h2>Design</h2>
-<p>Design feito por <a href="https://www.instagram.com/tiagoluchtenberg/" </p>
+<p>Design feito por <a href="https://www.instagram.com/tiagoluchtenberg"</a></p>
  <tr>
   <td colspan=2 >Desktop</td>
   <td colspan=2 >Mobile</td>
  </tr>
  <tr>
-  <td></td>
+  <td><a target="_blank" rel="noopener noreferrer" href="https://user-images.githubusercontent.com/45560284/91367080-e68bd800-e7db-11ea-85bd-9bab3e7d98c8.png" </td>
   <td></td>
   <td></td>
   <td></td>
