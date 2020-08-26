@@ -18,14 +18,11 @@
  
  <h2>Design</h2>
 <p>Design feito pelo <a href="https://www.instagram.com/tiagoluchtenberg"</a> Tiago</p>
- <tr>
-  <td colspan=2 >Desktop</td>
-  <td colspan=2 >Mobile</td>
- </tr>
- <tr>
+
+<h2>Desktop>
+  <img src="https://user-images.githubusercontent.com/45560284/91367080-e68bd800-e7db-11ea-85bd-9bab3e7d98c8.png" width=500px height=300px>
  
-  <td> <img src="https://user-images.githubusercontent.com/45560284/91367080-e68bd800-e7db-11ea-85bd-9bab3e7d98c8.png/" width=150px </td>
-  <td></td>
-  <td></td>
-  <td></td>
+ 
+ 
+  
 
