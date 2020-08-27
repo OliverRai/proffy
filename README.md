@@ -22,7 +22,14 @@
   <img src="https://user-images.githubusercontent.com/45560284/91367090-ed1a4f80-e7db-11ea-8a9f-f52598324182.png" width=400px height=200px>
 
 <h3>Mobile</h3> </br>
-  <img src= "https://user-images.githubusercontent.com/45560284/91368109-995d3580-e7de-11ea-9e92-91b744d241c0.png" width=200px height=350px>
-  <img src="https://user-images.githubusercontent.com/45560284/91368112-9c582600-e7de-11ea-9389-f20706aa15cd.png" width=200px height=350px>
+  <img src= "https://user-images.githubusercontent.com/45560284/91368109-995d3580-e7de-11ea-9e92-91b744d241c0.png" width=200px height=380px>
+  <img src="https://user-images.githubusercontent.com/45560284/91368112-9c582600-e7de-11ea-9389-f20706aa15cd.png" width=200px height=380px>
   
 
+<h2>Caso você queira executar esse projeto no seu computador </h2>
+<ul>
+ <li> Clonar o repositório: git clone https://github.com/OliverRai/proffy  </li>
+</ul>
+ <p>Ir para a pasta 'web' para rodar o front-end, ou ir para pasta 'server' para rodar o back-end:</p>
+ <li> Instalar dependências: yarn install </li>
+ <li> Rodar Aplicação: yarn start </li>
