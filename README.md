@@ -31,5 +31,7 @@
  <li> Clonar o repositório: git clone https://github.com/OliverRai/proffy  </li>
 </ul>
  <p>Ir para a pasta 'web' para rodar o front-end, ou ir para pasta 'server' para rodar o back-end:</p>
+ <ul>
  <li> Instalar dependências: yarn install </li>
  <li> Rodar Aplicação: yarn start </li>
+ </ul>
